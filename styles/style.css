@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'idiotstax';
-    src: url('idiotstax.ttf');
+    src: url('../fonts/idiotstax.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url('bg.png');
+    background-image: url('../images/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
