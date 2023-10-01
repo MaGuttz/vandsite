@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsif</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #101010;
+            color: #fff;
+            text-align: left;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Freshman', cursive;
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        .store-button {
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            background-color: #fefefe;
+            color: #101010;
+            padding: 10px 20px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border 0.3s, border-radius 0.3s;
+            box-sizing: border-box;
+        }
+
+        .store-button:hover {
+            background-color: #101010;
+            color: #fefefe;
+            border: 1px solid #fefefe;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #101010;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .wrap div {
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            font-size: 25px;
+            color: #999999;
+            width: auto;
+            margin: 50px 50px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        /* Gaya untuk card */
+        .card {
+            margin-top: 50px;
+            width: 800px; /* Lebar card 800px */
+            height: 450px; /* Tinggi card 450px */
+            background-color: #fefefe;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto; /* Posisikan di tengah secara horizontal */
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .card-content .view-profile-button {
+            background-color: #101010;
+            color: #fefefe;
+            padding: 10px 20px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border 0.3s, border-radius 0.3s;
+        }
+
+        .card-content .view-profile-button:hover {
+            background-color: #fefefe;
+            color: #101010;
+            border: 1px solid #fefefe;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MaGuttz!</h1>
+        <a href="https://instagram.com/pmngks.graff" target="_blank" class="store-button">GRAFF STORE</a>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrap">
+                <div>AUDACES</div>
+                <div>FORTUNA</div>
+                <div>ADIUVAT</div>
+            </div>
+
+            <!-- Card -->
+            <div class="card">
+                <img src="https://placekitten.com/800/450" alt="Card Image">
+                <div class="card-content">
+                    <p>This is some text below the image.</p>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+            <!-- End Card -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Web Responsif</p>
+    </footer>
+</body>
+
+</html>
