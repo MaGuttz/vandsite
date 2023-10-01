@@ -3,6 +3,7 @@
 This repository contains the source code for the MaGuttz! website. The website is designed to showcase artwork and provide information about MaGuttzprjkt.
 
 ![MaGuttz! Website Preview](images/preview.jpeg)
+![MaGuttz! - Gallery Website Preview](images/previewgallery.jpeg)
 
 #### Features
 
