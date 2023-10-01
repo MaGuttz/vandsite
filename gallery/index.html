@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Responsif</title>
+    <title>MaGuttz! - Gallery</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -46,18 +49,18 @@
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s, border 0.3s, border-radius 0.3s;
-            box-sizing: border-box;
+            border: 1px solid #fefefe;
         }
 
         .store-button:hover {
             background-color: #101010;
             color: #fefefe;
-            border: 1px solid #fefefe;
             border-radius: 5px;
         }
 
         main {
             padding: 20px;
+            flex: 1;
         }
 
         footer {
@@ -65,8 +68,6 @@
             color: #fff;
             text-align: center;
             padding: 1em 0;
-            position: absolute;
-            bottom: 0;
             width: 100%;
         }
 
@@ -76,6 +77,7 @@
             width: 300px;
             margin: 0 auto;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .wrap div {
@@ -84,7 +86,7 @@
             font-size: 25px;
             color: #999999;
             width: auto;
-            margin: 50px 50px 0;
+            margin: 15px 15px 0;
             padding: 10px;
             border-radius: 5px;
         }
@@ -93,29 +95,45 @@
             text-align: center;
         }
 
-        /* Gaya untuk card */
         .card {
-            margin-top: 50px;
-            width: 800px; /* Lebar card 800px */
-            height: 450px; /* Tinggi card 450px */
-            background-color: #fefefe;
-            border-radius: 5px;
+            width: 600px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 0 auto; /* Posisikan di tengah secara horizontal */
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .card img {
+        .card-frame {
+            position: relative;
             width: 100%;
-            height: auto;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .card-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+            border-radius: 10px 10px 0 0;
+            transition: filter 0.3s;
+        }
+
+        .card-frame:hover img {
+            filter: brightness(70%);
         }
 
         .card-content {
+            width: 100%;
             padding: 15px;
-            text-align: center;
+            text-align: left;
+            margin-left: 50px;
         }
 
         .card-content p {
@@ -136,13 +154,21 @@
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s, border 0.3s, border-radius 0.3s;
+            border: 1px solid #101010;
         }
 
         .card-content .view-profile-button:hover {
             background-color: #fefefe;
             color: #101010;
-            border: 1px solid #fefefe;
             border-radius: 5px;
+        }
+
+        .aldp-text {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            color: #fff;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -163,7 +189,10 @@
 
             <!-- Card -->
             <div class="card">
-                <img src="https://placekitten.com/800/450" alt="Card Image">
+                <div class="card-frame">
+                    <img src="https://placekitten.com/600/250" alt="Card Image">
+                    <div class="aldp-text">ALDP.</div>
+                </div>
                 <div class="card-content">
                     <p>This is some text below the image.</p>
                     <button class="view-profile-button">View Profile</button>
@@ -174,7 +203,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Web Responsif</p>
+        <p>&copy; 2023 MAGUTTZPRJKT.</p>
     </footer>
 </body>
 
